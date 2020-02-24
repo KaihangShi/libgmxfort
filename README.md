@@ -37,7 +37,7 @@ To test your build, do:
 make test
 ```
 
-If the tests do not pass, please file an issue.
+If the tests do not pass, please file an issue. While running the test, the gfortran version should be the same as the compiler version before. 
 
 ## Installation
 
