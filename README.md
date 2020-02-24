@@ -54,7 +54,9 @@ Compile your program with `-lgmxfort`. You may also need to use `-I` to point to
 where the modules files are even with all of the right environment variables set
 (by default at `/usr/local/include`). A pkg-config file is included, so that it can
 be used in your program compilations. You may need to set `PKG_CONFIG_PATH` to
-find the file (by default in the directory `/usr/local/lib/pkgconfig`)
+find the file (by default in the directory `/usr/local/lib/pkgconfig`). 
+
+If shared library cannot be found in the default search path. You may need to add the installed directory `/usr/local/lib/` to the environmental variable `LD_LIBRARY_PATH`.
 
 ### Linking other cmake projects
 
