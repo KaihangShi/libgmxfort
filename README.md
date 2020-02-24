@@ -52,19 +52,15 @@ make install
 
 Compile your program with `-lgmxfort`. You may also need to use `-I` to point to
 where the modules files are even with all of the right environment variables set
-(by default at `/usr/local/include`). 
+(by default at `/usr/local/include`). A pkg-config file is included, so that it can
+be used in your program compilations. You may need to set `PKG_CONFIG_PATH` to
+find the file (by default in the directory `/usr/local/lib/pkgconfig`)
 
 ### Linking other cmake projects
 
 A file is included to easily link other cmake projects to the gmxfort
 installation. Use `find_package ( gmxfort )` and the variables
 `gmxfort_INCLUDE_DIRS` and `gmxfort_LIBRARIES`.
-
-### pkg-config
-
-A pkg-config file is included, so that it can
-be used in your program compilations. You may need to set `PKG_CONFIG_PATH` to
-find the file (by default in the directory `/usr/local/lib/pkgconfig`)
 
 ### API
 
