@@ -27,6 +27,8 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
 make
 ```
 
+Higher gfortran version might be needed. Use command 'export FC=/path/to/new/gfortran' first to specify the gfortran version to use; then cmake and make. 
+
 ## Testing
 
 To test your build, do:
